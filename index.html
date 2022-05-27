@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="divTitulos">
+            <h1>Kenzie</h1>
+            <h2>Food</h2>
+        </div>
+        <nav id="botoesLoginCadastro">
+            <div id="campoBusca">
+                <input type="text" placeholder="Pesquisar por produto" id="procurar">
+                
+            </div>
+
+            <button class="cadastro">Cadastro</button>
+            <button class="login">Login</button>
+        </nav>
+    </header>
+    <main>         
+        <nav class="botoesFiltro">
+            <button class="estiloGeralBotoes select" data-secao="Todos" id="botaoTodos">Todos</button>
+            <button class="estiloGeralBotoes" data-secao="Panificadora" id="botaoPanificadora"><img id= "imgPanificadora" src="./src/styles/assets/Icon_pao.png" alt="pao">Panificadora</button>
+            <button class="estiloGeralBotoes" data-secao="Frutas" id="botaoFrutas"><img id= "imgFrutas" src="./src/styles/assets/Icon_frutas.png" alt="frutas">Frutas</button>
+            <button class="estiloGeralBotoes" data-secao="Bebidas" id="botaoBebidas"><img id= "imgBebidas" src="./src/styles/assets/Icon_bebidas.png" alt="bebidas">Bebidas</button>
+        </nav>
+    
+        <section id="containerVitrine">
+            <ul id="vitrine">
+
+            </ul>
+        </section>
+        <footer>
+            <button class="botaoPaginas" id="botaoPaginaAnterior">Anterior</button>
+            <span id="paginaAtual"></span>
+            <button class="botaoPaginas" id="botaoPaginaPosterior">Próximo</button>
+        </footer>
+    </main>
+    <aside>
+        <div id="carrinho">
+            <div id="headerCarrinho">
+                <img src="/src/styles/assets/carrinho.png" alt="carrinho compras">
+                <p id="tituloCarrinho">Carrinho</p>
+            </div>
+        
+            <div id="conteudoCarrinho" class="conteudoCarrinho">
+                <img src="" alt="">
+                <span></span>
+                <div id="conteudoModalCarrinho" class="conteudoModalCarrinho"></div>
+                <div id="quantidadeModalCarrinho" class="quantidadeModalCarrinho">
+                    <h3>Quantidade</h3>
+                    <p>0</p>
+                </div>
+                <div id="precoTotalModal" class="precoTotalModal">
+                    <h3>Total</h3>
+                    <p>R$ 00,00</p>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+    <div class="modal">
+        <div class="content">
+          <header class="modalCarrinhoHeader">
+              <div id="tituloModalCarrinho">
+                    <img src="./src/styles/assets/carrinhoBranco.png" alt="">
+                    <h2>Carrinho</h2>
+              </div>
+              <button>x</button>
+          </header>
+          <div id="conteudoModalCarrinho"></div>
+          <div id="quantidadeModalCarrinho">
+              <h3>Quantidade</h3>
+              <p>0</p>
+          </div>
+          <div id="precoTotalModal">
+              <h3>Total</h3>
+              <p>R$ 00,00</p>
+          </div>
+        </div>
+      </div>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+</html>

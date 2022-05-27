@@ -1,0 +1,916 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    height: 72px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.25);
+}
+
+.secaoTitulos {
+    margin: 20px 0px;
+    display: flex;
+}
+
+.subTitulo {
+    margin: 6px 0px 0px 6px;
+    font-size: 16.2712px;
+    color: #FF2253;
+}
+
+.secaoBotoes {
+    margin: 10px 0px;
+    display: flex;
+}
+
+.botaoDePesquisa {
+    padding: 15px 18px 15px 16px;
+    width: 280px;
+    height: 17px;
+    top: 12px;
+    background: #E9ECEF;
+    border: 1.5px solid #E9ECEF;
+    border-radius: 12px;
+}
+
+.botaoDePesquisa:focus {
+    outline: none;
+}
+
+.iconeUsuario {
+    margin: 7px 0px 0px 35px;
+    width: 36px;
+    height: 36px;
+    border-radius: 128.571px;
+    cursor: pointer;
+}
+
+.secaoAdicionarProduto {
+    display: flex;
+    margin: 40px 0px;
+}
+
+.secaoCategorias {
+    margin-left: 149px;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 20px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.categoriaTodos, .botaoAdicionarProduto {
+    background: #FF2253;
+    color: white;
+}
+
+.categoriaPanificadora {
+    background: #FFF7F4;
+}
+
+.categoriaPanificadora:hover {
+    background: #f9ece8;
+}
+
+.categoriaFrutas {
+    background: #FFF1F4;
+}
+
+.categoriaFrutas:hover {
+    background: #f9e6ea;
+}
+
+.categoriaBebidas {
+    background: #F3EEF5;
+}
+
+.categoriaBebidas:hover {
+    background: #e9e0ed;
+}
+
+.botaoAdicionarProduto {
+    margin-left: 618px;
+}
+
+.botaoAdicionarProduto:hover {
+    background: #af1a3b;
+}
+
+.secaoCategoriasDosProdutos {
+    display: flex;
+    color: #868E96;
+    margin-right: 180px;
+    margin-left: 190px;
+    justify-content: space-between;
+}   
+
+.divProdutoLogado {
+    margin-top: 20px;
+    margin-left: 158px;
+    margin-right: 100px;
+    width: auto;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E9ECEF;
+    border-radius: 12px;
+}
+
+.imgProduto {
+    margin: 15px 0px 0px 15px;
+    width: 32px;
+    height: 32px;
+    border-radius: 150px;
+}
+
+.tituloProduto {
+    margin-top: 20px;
+}
+
+.categoriaProduto {
+    margin-top: 15px;
+    background: #F8F9FA;
+    color: #868E96;
+    height: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.descricaoProduto {
+    margin-top: 20px;
+}
+
+.divBotoes {
+    margin-top: 15px;
+}
+
+.editarProduto, .removerProduto {
+    margin-right: 15px;
+    background: #F8F9FA;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+.divIconeUsuario:hover .divModalSair {
+    background: white;
+    position: absolute;
+    top: 9%;
+    left: 70%;
+    width: 206px;
+    height: 127px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.15);
+}
+
+.botaoSair {
+    display: none;
+    width: 175px;
+    height: 50px;
+    background: #F8F9FA;
+}
+
+.divIconeUsuario:hover .botaoSair {
+    display: block;
+}
+
+.divIconeUsuario:hover .botaoSair:hover {
+    background: #E9ECEF;
+}
+
+hr {
+    display: none;
+    height: 1px;
+    background: #E9ECEF;
+}
+
+.divIconeUsuario:hover hr {
+    display: block;
+}
+
+.nomeDoUsuario {
+    display: none;
+}
+
+.divIconeUsuario:hover .nomeDoUsuario {
+    display: block;
+}
+
+
+
+
+.divProdutoAdicionado {
+    width: 496px;
+    height: 65px;
+}
+
+.headerDivProdutoAdicionado {
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.tituloDivProdutoAdicionado {
+    padding: 0;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.textoDivProdutoAdicionado {
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.corDivProdutoAdicionado {
+    background: #39DF8F;    
+    border: none;
+    height: 8px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+
+.telaPreta, .telaPretaModalEditar {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.telaPretaModalExcluir {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.modal {
+    width: 469px;
+    height: auto;
+    border-radius: 12px;
+    background: white;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mostrar .modal {
+    animation: modal .3s;
+}
+
+.telaPreta.mostrar, .telaPretaModalExcluir.mostrar, .telaPretaModalEditar.mostrar {
+    display: flex;
+}
+
+.header {
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    background: #F8F9FA;
+}
+
+h4, .botaoSairModal {
+    margin: 20px;
+}
+
+.botaoSairModal, .botaoSairModalDelete, .botaoSairModalEditar {
+    padding: 0;
+    margin-top: 15px;
+    width: 31px;
+    height: 30px;
+    border: none;
+}
+
+.CorpoModal, .CorpoModalEditar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+label {
+    margin: 25px 0px 2px 2px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 12px;
+    border: 1.5px solid #DEE2E6;
+    background: #F8F9FA;
+}
+
+input:focus {
+    outline: none;
+}
+
+.botaoDescricao {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.categoriasCriandoProduto > input, .categoriasCriandoProdutoEditar > input {
+    padding: 0;
+    width: 136px;
+    height: 40px;
+    background: #F8F9FA;
+    border: 1.5px solid #F8F9FA;
+    border-radius: 32px;
+    margin: 0px 3px 10px 0px;
+    cursor: pointer;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 3px;
+}
+
+.botaoCadastrarProduto {
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin-top: 40px;
+    width: 429px;
+    height: 52px;
+    background: #FF2253;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.botoesDoModal {
+    text-align: center;
+}
+
+.botaoExcluirModal, .botaoSalvarModal {
+    margin: 40px 0px 10px 0px;
+    background: #F8F9FA;
+    border: none;
+    border-radius: 32px;
+    width: 192px;
+    height: 52px;
+    cursor: pointer;
+}
+
+.botaoSalvarModal {
+    background: #FF2253;
+    color: white;
+}
+
+.mostrar .modalExcluir {
+    animation: modal .3s;
+}
+
+.modalExcluir {
+    margin-top: 48px;
+}
+
+.headerModalExcluir {
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    background: #F8F9FA;
+}
+
+.secaoDeletar {
+    width: 496px;
+    height: 213px;
+    background: white;
+    text-align: center;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.paragrafoDeletar {
+    margin: 0;
+    padding: 50px 0px;
+}
+
+.botaoSim, .botaoNao {
+    margin: 10px;
+    background: #F8F9FA;
+    width: 210px;
+    height: 52px;
+    border-radius: 32px;
+    color: #868E96;
+    cursor: pointer;
+}
+
+.botaoSim:hover, .botaoNao:hover {
+    background: #eaecee;
+}
+
+
+
+
+
+.divProdutoAdicionado {
+    display: none;
+    width: 496px;
+    height: 65px;
+}
+
+.headerDivProdutoAdicionado {
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.tituloDivProdutoAdicionado {
+    padding: 0;
+    margin: 0;
+    padding-top: 3px;
+}
+
+.textoDivProdutoAdicionado {
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.corDivProdutoAdicionado {
+    background: #39DF8F;    
+    border: none;
+    height: 8px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+    header {
+        display: flow-root;
+        height: auto;
+    }
+
+    .secaoTitulos {
+        justify-content: center;
+    }
+
+    .secaoBotoes {
+        justify-content: center;
+    }
+
+    .botaoDePesquisa {
+        width: auto;
+    }
+
+    .iconeUsuario {
+        margin-left: 20px;
+    }
+
+    .secaoAdicionarProduto {
+        display: block;
+        margin-left: 57px;
+    }
+
+    .secaoCategorias, .botaoAdicionarProduto {
+        margin-left: 0;
+    }
+
+    .secaoCategoriasDosProdutos {
+        display: none;
+    }
+
+    .botaoAdicionarProduto {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .modal {
+        width: 300px;
+    }
+
+    .CorpoModal, .CorpoModalEditar {
+        margin: 0px 20px;
+    }
+
+    .categoriasCriandoProduto, .categoriasCriandoProdutoEditar {
+        display: flex;
+    }
+
+    .botaoPanificadora {
+        font-size: 75%;
+    }
+
+    .botaoCadastrarProduto {
+        margin-top: 8px;
+        width: auto;
+        height: 49px;
+    }
+
+    .botaoExcluirModal, .botaoSalvarModal {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .secaoDeletar {
+        width: 300px;
+        height: 178px;
+    }
+
+    .paragrafoDeletar {
+        font-size: 90%;
+        padding: 40px 5px 40px 5px;
+    }
+
+    .botaoSim, .botaoNao {
+        width: 121px;
+    }
+
+    .divIconeUsuario:hover .divModalSair {
+        top: 18.5%;
+        left: 25%;
+    }
+
+    .divProdutoLogado {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .categoriaProduto, .descricaoProduto {
+        display: none;
+    }
+
+    .tituloProduto {
+        margin-top: 25px;
+        font-size: 75%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+    header {
+        display: flow-root;
+        height: auto;
+    }
+
+    .secaoTitulos {
+        justify-content: center;
+    }
+
+    .secaoBotoes {
+        justify-content: center;
+    }
+
+    .botaoDePesquisa {
+        width: auto;
+    }
+
+    .iconeUsuario {
+        margin-left: 20px;
+    }
+
+    .secaoAdicionarProduto {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .secaoCategoriasDosProdutos {
+        display: none;
+    }
+
+    .botaoAdicionarProduto {
+        margin-top: 40px;
+    }
+
+    .modal {
+        width: 359px;
+    }
+
+    .CorpoModal, .CorpoModalEditar {
+        margin: 0px 20px;
+    }
+
+    label {
+        margin: 12px 0px 2px 2px;
+    }
+
+    .categoriasCriandoProduto, .categoriasCriandoProdutoEditar {
+        display: flex;
+    }
+
+    .botaoPanificadora {
+        font-size: 75%;
+    }
+
+    .botaoCadastrarProduto {
+        margin-top: 8px;
+        width: auto;
+        height: 49px;
+    }
+
+    .botaoExcluirModal, .botaoSalvarModal {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .headerModalExcluir {
+        margin-left: 23px;
+    }
+
+    .secaoDeletar {
+        width: 300px;
+        height: 178px;
+        margin-left: 23px;
+    }
+
+    .paragrafoDeletar {
+        font-size: 90%;
+        padding: 40px 5px 40px 5px;
+    }
+
+    .botaoSim, .botaoNao {
+        width: 121px;
+    }
+
+    .divIconeUsuario:hover .divModalSair {
+        top: 18.5%;
+        left: 28%;
+    }
+    
+    .divProdutoLogado {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .categoriaProduto, .descricaoProduto {
+        display: none;
+    }
+
+    .tituloProduto {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 400px) {
+    .secaoCategorias {
+        margin-left: 40px;
+    }
+
+    .botaoAdicionarProduto {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+
+    header {
+        display: flow-root;
+        height: auto;
+    }
+
+    .secaoTitulos {
+        justify-content: center;
+    }
+
+    .secaoBotoes {
+        justify-content: center;
+    }
+
+    .botaoDePesquisa {
+        width: auto;
+    }
+
+    .iconeUsuario {
+        margin-left: 20px;
+    }
+
+    .secaoAdicionarProduto {
+        display: block;
+        margin-left: 0;
+    }
+
+    .secaoCategoriasDosProdutos {
+        display: none;
+    }
+
+    .secaoCategorias, .botaoAdicionarProduto {
+        display: flex;
+        margin-left: 0;
+    }
+
+    .secaoCategorias > button {
+        margin: 5px;
+    }
+
+    .secaoCategorias {
+        justify-content: center;
+    }
+
+    .botaoAdicionarProduto {
+        margin-top: 40px;
+        margin-left: 121px;
+    }
+
+    .modal {
+        width: 359px;
+    }
+
+    .CorpoModal, .CorpoModalEditar {
+        margin: 0px 20px;
+    }
+
+    label {
+        margin: 12px 0px 2px 2px;
+    }
+
+    .categoriasCriandoProduto {
+        display: flex;
+    }
+
+    .botaoPanificadora {
+        font-size: 75%;
+    }
+
+    .botaoCadastrarProduto {
+        margin-top: 8px;
+        width: auto;
+        height: 49px;
+    }
+
+    .botaoExcluirModal, .botaoSalvarModal {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .headerModalExcluir {
+        margin-left: 23px;
+    }
+
+    .secaoDeletar {
+        width: 300px;
+        height: 178px;
+        margin-left: 23px;
+    }
+
+    .paragrafoDeletar {
+        font-size: 90%;
+        padding: 40px 5px 40px 5px;
+    }
+
+    .botaoSim, .botaoNao {
+        width: 121px;
+    }
+
+    .divIconeUsuario:hover .divModalSair {
+        top: 18.5%;
+        left: 40%;
+    }
+
+    .divProdutoLogado {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .descricaoProduto {
+        display: none;
+    }
+
+    .tituloProduto {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 424px) {
+    .secaoCategorias {
+        margin-left: 60px;
+    }
+
+    .botaoAdicionarProduto {
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 712px) {
+    .botaoAdicionarProduto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 532px) and (max-width: 711px) {
+    .divIconeUsuario:hover .divModalSair {
+        top: 18.5%;
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 712px) {
+    .secaoAdicionarProduto {
+        display: flex;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botaoAdicionarProduto {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .secaoAdicionarProduto {
+        justify-content: space-around;
+    }
+    
+    .secaoCategorias {
+        margin-left: 0;
+    }
+
+    .botaoAdicionarProduto {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (width: 1024px) {
+    .secaoAdicionarProduto {
+        margin-left: 140px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .secaoCategorias {
+        display: flex;
+    }
+
+    .botaoAdicionarProduto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.select {
+    background-color: #FF2253;
+    color: #F8F9FA;
+} 
+
+/* Footer paginas */
+
+footer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#paginaAtual {
+    display: flex;
+    margin: 20px 5px 0px 5px;
+}
+
+.botaoPaginas{
+    background-color: #FFF7F4;
+    border: 1.5px solid #FF2253;
+    border-radius: 32px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212529;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.botaoPaginas:hover{
+    background-color: #FF2253;
+    color: white;
+}
+
+#paginaAtual{
+    font-family: 'Inter';
+    color: #FF2253; 
+}

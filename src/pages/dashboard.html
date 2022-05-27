@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../styles/dashboard.css" type="text/css" rel="stylesheet" />
+
+        <title>Dashboard - Kenzie Food</title>
+    </head>
+    <body>
+
+        <div class="telaPreta">
+            <div class="modal">
+                <section class="header">
+                    <h4 class="tituloModal">Cadastro de produto</h2>
+                    <button class="botaoSairModal">X</button>
+                </section>
+                
+                <form class="CorpoModal">
+    
+                    <label>Nome do Produto</label>
+                    <input class="botaoNome" type="text" placeholder="Digite o nome" required autocomplete="off" />
+                    
+                    <label>Descrição</label>
+                    <input class="botaoDescricao" type="text" placeholder="Digite a descrição" required autocomplete="off" />
+    
+                    <p>Categorias</p>
+    
+                    <section class="categoriasCriandoProduto">
+    
+                        <input type="button" class="botaoPanificadora" value="Panificadora"></input>
+                        <input type="button" class="botaoFrutas" value="Frutas"></input>
+                        <input type="button" class="botaoBebidas" value="Bebidas"></input>
+                    </section>
+    
+                    <label>Valor do Produto</label>
+                    <input class="botaoValorProduto" type="text" placeholder="Digite o valor" required autocomplete="off" />
+    
+                    <label>Link da Imagem</label>
+                    <input class="botaoLinkImg" type="text" placeholder="Inserir link" required autocomplete="off" />
+    
+                    <button class="botaoCadastrarProduto">Cadastrar Produto</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="telaPretaModalEditar">
+            <div class="modal">
+                <section class="header">
+                    <h4 class="tituloModal">Edição de produto</h2>
+                    <button class="botaoSairModalEditar">X</button>
+                </section>
+                
+                <form class="CorpoModalEditar">
+    
+                    <label>Nome do Produto</label>
+                    <input class="botaoNome" type="text" placeholder="Digite o nome" required autocomplete="off" />
+                    
+                    <label>Descrição</label>
+                    <input class="botaoDescricao" type="text" placeholder="Digite a descrição" required autocomplete="off" />
+    
+                    <p>Categorias</p>
+    
+                    <section class="categoriasCriandoProdutoEditar">
+    
+                        <input type="button" class="botaoPanificadora" value="Panificadora"></input>
+                        <input type="button" class="botaoFrutas" value="Frutas"></input>
+                        <input type="button" class="botaoBebidas" value="Bebidas"></input>
+                    </section>
+    
+                    <label>Valor do Produto</label>
+                    <input class="botaoValorProduto" type="text" placeholder="Digite o valor" required autocomplete="off" />
+    
+                    <label>Link da Imagem</label>
+                    <input class="botaoLinkImg" type="text" placeholder="Inserir link" required autocomplete="off" />
+    
+                    <section class="botoesDoModal">
+                        <button class="botaoExcluirModal">Excluir</button>
+                        <button type="submit" class="botaoSalvarModal">Salvar Alteração</button>
+                    </section>
+                </form>
+            </div>
+        </div>
+
+        <div class="telaPretaModalExcluir">
+            <div class="modalExcluir">
+                
+                <section class="headerModalExcluir">
+                    <h4 class="tituloModal">Edição de produto</h2>
+                    <button class="botaoSairModalDelete">X</button>
+                </section>
+    
+                <section class="secaoDeletar">
+    
+                    <p class="paragrafoDeletar">Tem certeza que deseja exluir este produto?</p>
+    
+                    <input class="botaoSim" type="button" value="Sim" />
+                    <input class="botaoNao" type="button" value="Não" />
+                </section>
+    
+            </div>
+        </div>
+
+        <footer>
+            <button class="botaoPaginas" id="botaoPaginaAnterior">Anterior</button>
+            <span id="paginaAtual"></span>
+            <button class="botaoPaginas" id="botaoPaginaPosterior">Próximo</button>
+        </footer>
+
+        <script type="module" src="../js/dashboard.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
